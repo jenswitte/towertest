@@ -1,6 +1,5 @@
 ---
-- name: YUM Update
-  hosts: all
-  tasks:
-  - name: YUM Update
-    shell: yum update -f
+- name: upgrade all packages
+  yum:
+    name: '*'
+    state: latest
