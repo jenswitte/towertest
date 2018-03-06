@@ -1,0 +1,6 @@
+---
+- name: YUM Update
+  hosts: all
+  tasks:
+  - name: YUM Update
+    shell: yum update -f
