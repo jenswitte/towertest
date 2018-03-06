@@ -2,7 +2,7 @@
 - name: YUM Ppdate
   hosts: all
   tasks:
-        - name: upgrade all packages
-          yum:
-          name: '*'
-          state: latest
+    - name: upgrade all packages
+      yum:
+        name: '*'
+        state: latest
